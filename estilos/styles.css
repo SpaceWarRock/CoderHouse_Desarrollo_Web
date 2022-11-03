@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
@@ -215,21 +216,19 @@ section{
 
 /* ESTO ES PARA EL FOOTER DE TODAS LAS PÁGINAS */
 
-footer .contenedor {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-bottom: 25px;
-}
 
 .copy {
     font-size: 20px;
+    text-align: center;
 }
 
 .sociales {
     width: 100%;
-    text-align: center;
     font-size: 28px;
+    display: flex;
+    justify-content:center ;
+    text-align: center;
+    list-style: none;
 }
 
 .sociales a {
@@ -248,10 +247,6 @@ footer .contenedor {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-}
-
-.galeria li {
-    margin: 5px;
 }
 
 .galeria img {
@@ -317,3 +312,32 @@ textarea {
         width: 450px;
     }        
 }
+
+.scale-up-hor-center {
+	-webkit-animation: scale-up-hor-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-hor-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+/* Animación */
+
+ @-webkit-keyframes scale-up-hor-center {
+    0% {
+      -webkit-transform: scaleX(0.4);
+              transform: scaleX(0.4);
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+    }
+  }
+  @keyframes scale-up-hor-center {
+    0% {
+      -webkit-transform: scaleX(0.4);
+              transform: scaleX(0.4);
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+    }
+  }
+  

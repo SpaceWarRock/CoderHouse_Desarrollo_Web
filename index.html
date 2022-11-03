@@ -7,6 +7,9 @@
     <title>Mi Mascota</title>
     <link rel="stylesheet" href="./estilos/styles.css">
     <link rel="stylesheet" href="./estilos/fontello.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     </head>
     
     <body>
@@ -44,7 +47,7 @@
 
             <section id="blog">
                 <h3>Lo último de nuestro blog</h3>
-                <div class="contenedor">   
+                <div class="contenedor" data-aos="flip-left">   
                     <article>
                         <img src="./img/pet-blog1.jpg">
                         <h4>Escoje tu mascota perfecta</h4>
@@ -62,7 +65,7 @@
 
             <section id="info">
                 <h3>Para muchos de nosotros las mascotas no son simples compañeros, son miembros de la familia.</h3>
-                <div class="contenedor">
+                <div class="contenedor" data-aos="zoom-in">
                     <div class="info-pet">
                         <img src="./img/pet1.jpg" alt="">
                         <h4>Linfocito</h4>
@@ -84,14 +87,20 @@
         </main>
 
         <footer>
-            <div class="contenedor">
+            <nav>
                 <p class="copy">Mi mascota &copy; 2022</p>
-                <div class="sociales">
-                    <a class="icon-facebook" href="#"></a>
-                    <a class="icon-instagram" href="#"></a>
-                    <a class="icon-location" href="#"></a>
-                </div>
-            </div>
+                <ul>
+                    <div class="sociales">
+                        <li><a class="icon-facebook" href="#"></a></li>
+                        <li><a class="icon-instagram" href="#"></a></li>
+                        <li><a class="icon-location" href="#"></a></li>
+                    </div>
+                </ul>
+            </nav>
         </footer>
+        <!-- AOS -->
+        <script>
+            AOS.init();
+          </script>
     </body>
 </html>
